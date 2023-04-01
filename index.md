@@ -21,10 +21,8 @@
 * [Give thanks ](give_thanks.md)
 * [Gottes Geist bewegt die Herzen](gottest_geist_bewegt_die_herzen.md)
 * [Gross und wunderbar](gross_und_wunderbar.md)
-* [Há alegria](ha_alegria.md)
 * [Heilig, heilig, heilig](heilig_heilig_heilig.md)
 * [Himmlischer Vater](himmlischer_vater.md)
-* [Hine ma tov umanain (Quão bom e agradável)](hine_ma_tov_umanain.md)
 * [Hine mahtov u mahnaim](hine_matov_u_mahnaim.md)
 * [Iavé](iave.md)
 * [In the Kingdom](in_the_kingdom.md)
@@ -58,7 +56,6 @@
 * [Vater, mach uns eins](vater_mach_uns_eins.md)
 * [Vater, Vater, aller Vaterschaft](vater_vater_aller_vaterschaft.md)
 * [Würdig und herrlich ist das Lamm](wuerdig_und_herrlich_ist_das_lamm.md)
-* [Wunderbarer Gott](wunderbarer_gott.md)
 * [Yahweh](yahweh.md)
 
 

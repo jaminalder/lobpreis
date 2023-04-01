@@ -14,9 +14,9 @@
 * [Du grosser Gott](du_grosser_gott.md)
 * [Du wendest unser Geschick ](du_wendest_unser_geschick.md)
 * [Ein' feste Burg ist unser Gott](ein_feste_burg.md)
-* *Eis a ordem do Senhor*
+* [Eis a ordem do Senhor](eis_a_ordem_do_senhor.md)
 * [El Shaddai](el_shaddai.md)
-* *Ewig dein*
+* [Ewig dein](ewig_dein.md)
 * [Gemeinsam, bedürftig](gemeinsam_beduerftig.md)
 * [Give thanks ](give_thanks.md)
 * [Gottes Geist bewegt die Herzen](gottest_geist_bewegt_die_herzen.md)
@@ -27,8 +27,8 @@
 * [Hine ma tov umanain (Quão bom e agradável)](hine_ma_tov_umanain.md)
 * [Hine mahtov u mahnaim](hine_matov_u_mahnaim.md)
 * [Iavé](iave.md)
-* *In the Kingdom*
-* *In your arms*
+* [In the Kingdom](in_the_kingdom.md)
+* [In your arms](in_your_arms.md)
 * [In your presence, o God](in_your_presence.md)
 * [Jeschua Hamaschiach](jeschua_hamaschiach.md)
 * [Jesus, höchster Name](jesus_hoechster_name.md)
@@ -47,7 +47,7 @@
 * [Quão grande és tu](quao_grande_es_tu.md)
 * [Ruach](ruach.md)
 * [Seligstes Wissen: Jesus ist mein!](seligstes_wissen.md)
-* *Shalom chaverim*
+* [Shalom chaverim](shalom_chaverim.md)
 * [Shine, Jesus, shine!](shine_jesus_shine.md)
 * [Shouts of joy](shouts_of_joy.md)
 * [Siehe, wie fein und wie lieblich ist](siehe_wie_fein_und_wie_lieblich_ist.md)

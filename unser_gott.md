@@ -1,6 +1,6 @@
 # Unser Gott
 
-Unser Gott ist ein [C]mächtiger Gott, er herrscht  
+Unser Gott ist ein mächtiger Gott, er herrscht  
 vom Himmel herab  
 mit Weisheit, Liebe und Kraft,   
 unser Gott ist ein mächtiger Gott!

@@ -1,12 +1,8 @@
 # Unser Gott
 
-      a            C                  G
-Unser Gott ist ein mächtiger Gott, er herrscht  
-    a
+Unser Gott ist ein [C]mächtiger Gott, er herrscht  
 vom Himmel herab  
-    F         C
 mit Weisheit, Liebe und Kraft,   
-      G                      a
 unser Gott ist ein mächtiger Gott!
 
 Our God is an awesome God he reigns   

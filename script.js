@@ -1,2 +1,3 @@
-let d = new Date();
-document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+var md = require('markdown-it')();
+var result = md.render('# markdown-it rulezz!');
+document.body.innerHTML = result;

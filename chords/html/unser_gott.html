@@ -1,0 +1,66 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+
+</style>
+
+<body>
+
+<p>&lt;h1&gt;Unser Gott&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&quot;chord&quot;&gt;&lt;span class=&quot;inner&quot;&gt;&lt;i class=&quot;name&quot;&gt;C&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;Unser Gott &lt;span class=&quot;chord&quot;&gt;&lt;span class=&quot;inner&quot;&gt;&lt;i class=&quot;name&quot;&gt;E&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;ist ein mächtiger Gott, er herrscht&lt;br&gt;
+vom Himmel herab&lt;br&gt;
+mit Weisheit, Liebe und Kraft,&lt;br&gt;
+unser Gott ist ein mächtiger Gott!&lt;/p&gt;
+&lt;p&gt;Our God is an awesome God he reigns&lt;br&gt;
+from heaven above&lt;br&gt;
+with wisdom, power and Love&lt;br&gt;
+our God is an awesome God&lt;/p&gt;</p>
+
+
+</body>
+</html>

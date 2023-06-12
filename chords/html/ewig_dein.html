@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,18 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Ewig dein</h1>
+<p>0 Herr, auf immer und ewig sind wir dein, deine Braut, dein Leib!<br>
+Nur dir, o Gott, gehören wir!</p>
+<p>Wie ein heller Lichtstrahl in der Dunkelheit, voller Zärtlichkeit und Gunst,<br>
+wie ein Feuer, das brennt und niemals erlischt, so ist deine Liebe in uns.</p>
+<p>Deine Liebe in uns, der Vater in dir, wir in euch, so sind wir eins!<br>
+Damit jeder erkennt, dass er dich gesandt, Jesus, du bist Gottes Sohn!</p>
+<p>Wie ein wallender Strom in der Trockenheit, voller Lebenskraft und Glanz,<br>
+wie ein Siegel aus Gold, an die Herzen gelegt, so ist deine Liebe in uns!</p>
+<p>Deine Liebe in uns, der Vater in dir, wir in euch, so sind wir eins!<br>
+Damit jeder erkennt, dass er dich gesandt, Jesus, du bist Gottes Sohn!</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

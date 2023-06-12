@@ -1,0 +1,82 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <h1>In your presence, o God</h1>
+<p>In your presence, that's where I am strong<br>
+in your presence, o Lord, my God<br>
+in your presence, that's where I belong<br>
+seeking your face, touching your grace<br>
+in the cleft of the Rock, in your presence, o God</p>
+<p>I want to go where the rivers cannot overflow me<br>
+where my feet are on the Rock</p>
+<p>I want to hide where the blazing fire cannot burn me<br>
+in your presence, o God</p>
+<p>I want to hide where the flood of evil cannot reach me<br>
+where I'm covered by the blood</p>
+<p>I want to be where the shames of darkness cannot touch me<br>
+in your presence, o God</p>
+<p>You are my firm foundation<br>
+I trust in you all day long<br>
+I am your child and your servant<br>
+and you are my strength and my song</p>
+<p>you are my song</p>
+<p>In your presence, that's where I am strong<br>
+in your presence, o Lord, my God<br>
+in your presence, that's where I belong<br>
+seeking your face, touching your grace<br>
+in the cleft of the Rock, in your presence, o God<br>
+seeking your face, touching your grace<br>
+in the cleft of the Rock, in your presence, o God</p>
+
+
+</body>
+</html>

@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,20 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Vater, Vater, aller Vaterschaft</h1>
+<p>Vater, Vater aller Vaterschaft,<br>
+nichts kann mich von dir scheiden!<br>
+Deine Liebe ist so stark wie ein Strom!<br>
+Deine Liebe überwindet alles Leiden,<br>
+deine Liebe überwindet alles Leiden.</p>
+<p>Du öffnest mir den Weg zu dir, durch Jesus, deinen Sohn,<br>
+ich weiss, da ist ein Platz für mich an deinem Gnadenthron!</p>
+<p>Ich berge mich in deiner Hand, mein Herz wird still in dir.<br>
+Du gibst mir neuen Mut und sagst: “Mein Kind, vertraue mir!“</p>
+<p>O komm, mit deiner Gegenwart, dein Geist soll auf mir ruh'n,<br>
+denn deine Pläne will ich seh'n und deine Werke tun!</p>
+<p>Abba, Vater, Abba, Vater, ...</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

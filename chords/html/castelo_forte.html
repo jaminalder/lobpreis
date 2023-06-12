@@ -1,0 +1,99 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <p># Castelo Forte</p>
+<p>Castelo forte é nosso Deus, amparo e fortaleza:
+Com seu poder defende os seus
+na luta e na fraqueza.
+Nos tenta Satanás, com fúria pertinaz,
+com artimanhas tais e astúcias tão cruéis,
+que iguais não há na Terra.</p>
+<p>A nossa força nada faz: Estamos, sim, perdidos.
+Mas nosso Deus socorro traz e somos protegidos.
+Defende-nos Jesus, o que venceu na cruz,
+O Senhor dos altos céus. E sendo também Deus,
+Triunfa na batalha.</p>
+<p>Se nos quisessem devorar, Demônios não contados,
+Não nos podiam assustar, nem somos derrotados.
+O grande acusador dos servos do Senhor
+Já condenado está: Vencido cairá
+Por uma só palavra.</p>
+<p>Que Deus a luta vencerá, sabemos com certeza,
+e nada nos assustará com Cristo por defesa.
+Se temos de perder família, bens, poder,
+e embora a vida vá, por nós Jesus está,
+e dar-nos-á seu reino.</p>
+<h1>Ein' feste Burg ist unser Gott</h1>
+<p>Ein' feste Burg ist unser Gott, ein' gute Wehr und Waffen.
+Er hilft uns frei aus aller Not, die uns jetzt hat betroffen.
+Der alte böse Feind, mit Ernst er es jetzt meint;
+grosse Macht und List sein' grausam Rüstung ist,
+auf Erd ist nicht seinsgleichen.</p>
+<p>Mit unsrer Macht ist nichts getan, wir sind gar bald verloren;
+es streit für uns der rechte Mann, den Gott hat selbst erkoren.
+Fragst du, wer der ist? Er heisst Jesus Christ,
+der Herr Zebaoth, und ist kein andrer Gott;
+das Feld muss er behalten.</p>
+<p>Und wenn die Welt voll Teufel wär' und wollt' uns gar verschlingen,
+so fürchten wir uns gar nicht mehr, es soll uns doch gelingen.
+Der Fürst dieser Welt, wie sauer er sich stellt,
+tut er uns doch nichts; das macht, er ist gericht:
+ein Wörtlein kann ihn fällen.</p>
+<p>Das Wort sie sollen lassen stahn, und kein' Dank dazu haben;
+er ist bei uns wohl auf dem Plan mit seinem Geist und Gaben.
+Nehmen sie den Leib, Gut, Ehr, Kind und Weib;
+lass fahren dahin, sie haben kein' Gewinn,
+das Reich muss uns doch bleiben.</p>
+
+
+</body>
+</html>

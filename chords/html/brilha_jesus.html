@@ -1,0 +1,108 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <p># Brilha Jesus</p>
+<p>Vejo a luz do Senhor que brilha
+Bem no meio das trevas brilha
+Jesus Cristo é a luz deste mundo
+Nos acorda do sono profundo
+Brilha em mim, brilha em mim</p>
+<p>Brilha Jesus, mostra ao mundo a luz de Deus Pai
+Espírito de Deus, vem refulge em nós
+Faz transbordar sobre os povos Tua Graça e Perdão
+Vem ordenar que haja luz oh Senhor</p>
+<p>Eis que chego ao Teu trono incrível
+Mais finito ao intangível
+No Teu sangue precioso eu ouso entrar
+Minhas sombras da alma vem dissipar
+Brilha em mim, brilha em mim</p>
+<p>Brilha Jesus, mostra ao mundo a luz de Deus Pai
+Espírito de Deus, vem refulge em nós
+Faz transbordar sobre os povos Tua graça e perdão
+Vem ordenar que haja luz oh Senhor</p>
+<p>Contemplando Tua majestade
+Teu reflexo em nossas faces
+Cada dia de glória em glória
+Mostrem sempre a Tua história
+Brilha em mim, brilha em mim</p>
+<p>Brilha Jesus, mostra ao mundo a luz de Deus Pai
+Espírito de Deus, vem refulge em nós
+Faz transbordar sobre os povos Tua graça e perdão
+Vem ordenar que haja luz oh Senhor</p>
+<h1>Shine, Jesus, shine!</h1>
+<p>Lord the light of your love is shining,
+in the midst of the darkness shining,
+Jesus light of the world shine upon us,
+set us free by the truth you now bring us,
+shine on me, shine on me.</p>
+<p>Shine, Jesus, shine
+fill this land with the Father's glory,
+blaze, Spirit, blaze
+set our hearts on fire,
+flow, river, flow
+flood the nations with grace and mercy,
+send forth your word, Lord
+and let there be light.</p>
+<p>Lord I come to your awesome presence
+from the shadows into your radiance,
+by the blood I may enter your brightness
+search me,try me, consume all my darkness,
+shine on me, shine on me.</p>
+<p>As we gaze on your kingly brightness,
+so our faces display your likeness,
+ever changing from glory to glory,
+mirrored here may our lives tell your story,
+shine on me, shine on me.</p>
+
+
+</body>
+</html>

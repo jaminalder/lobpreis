@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,38 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Himmlischer Vater</h1>
+<p>Allmächtiger Gott und Schöpfer,<br>
+du regierst in Herrlichkeit!<br>
+Ohne Ende, ohne Grenzen,<br>
+bis in alle Ewigkeit!</p>
+<p>Wir erheben deinen Namen,<br>
+wunderbarer El Shaddai,<br>
+dir sei alle Anbetung,<br>
+Ehre und Preis!</p>
+<p>Himmlischer Vater,<br>
+wir danken dir für alles,<br>
+für deinen Plan der Liebe,<br>
+die Erlösung durch den Sohn!</p>
+<p>Vater des Lichts,<br>
+schenk uns den Geist der Weisheit,<br>
+die Erkenntnis deiner Grösse,<br>
+und lass uns vollkommen sein,<br>
+wie du vollkommen bist!</p>
+<p>Die Augen unsrer Herzen,<br>
+lass erleuchtet sein durch dich,<br>
+zu sehen deinen Willen<br>
+und was dein Wunsch für uns ist!</p>
+<p>Wir sind deine Kinder<br>
+und wollen deine Diener sein,<br>
+unser Leben dir geben,<br>
+nur dir allein!</p>
+<p>Hoheit, Majestät und Pracht,<br>
+Stärke Herrschaft und Kraft,<br>
+Gnade, Erbarmen und Trost,<br>
+Hoffnung und Glaube,<br>
+Liebe und Schutz!</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

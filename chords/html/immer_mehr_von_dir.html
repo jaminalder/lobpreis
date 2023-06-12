@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,18 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Immer mehr von dir</h1>
+<p>Immer mehr von dir, immer mehr!<br>
+Immer mehr sein wie du, immer mehr!<br>
+Immer mehr deine Worte versteh'n<br>
+deine Werke tun, o Herr, immer mehr!</p>
+<p>Du bist der Gott, der seine Kinder liebt,<br>
+der als ein Vater ihr Verlangen sieht,<br>
+niemand und nichts kommt dir jemals gleich, o Herr!</p>
+<p>Du zeigst dich uns als ewig treuer Freund<br>
+und weisst genau, wie unser Herz es meint,<br>
+gib uns mehr von dir, immer mehr!</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,11 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Die Ehre sei allein ihm</h1>
+<p>Die Ehre sei allein ihm, dem wahren Gott, der durch Christus, den Herrn, uns gerettet hat. Er schützt und er bewahrt uns in seiner Hand, in seiner Liebe zieht er uns zu seinem Thron.</p>
+<p>Alle Ehre und Herrlichkeit, die Herrschaft und Hoheit, gebührt von nun an dir bis in Ewigkeit, bis in Ewigkeit.</p>
+<p>Die Ehre sei allein dir, dem wahren Gott, der durch Jesus, den Sohn, uns gerettet hat. Du schützt und du bewahrst uns in deiner Hand, in deiner Liebe ziehst du uns zu deinem Thron.</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

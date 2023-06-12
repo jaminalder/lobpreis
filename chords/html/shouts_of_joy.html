@@ -1,0 +1,89 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <h1>Shouts of joy</h1>
+<p>Shouts of joy and victory resound in the tents<br>
+of the righteous of the Lord<br>
+shouts of joy and victory resound in the tents<br>
+of the righteous of the Lord</p>
+<p>the Lord's right hand has done mighty things for us<br>
+the Lord's right hand is lifted high<br>
+the Lord's right hand has done mighty things for us<br>
+the Lord's right hand reigns on high, the Lord's right hand reigns on high</p>
+<p>sing for Joy in the Lord<br>
+o ye righteous ones</p>
+<p>sing for him a new song<br>
+let your heart rejoice in him</p>
+<p>o magnify the Lord with me<br>
+let us exalt his name together<br>
+o magnify the Lord with me<br>
+let us exalt his name</p>
+<p>bless his holy (3x) bless his holy name with shouts of joy...</p>
+<p>Roni Roni Bat Zion<br>
+Hariu Ysrael<br>
+Simchi V'altsi B'chol Lev<br>
+Bat Yerushalayim</p>
+<p>For the Lord has<br>
+taken your punishment<br>
+destroyed your enemies</p>
+<p>King of Israel<br>
+Lord of all is he<br>
+in the midst of us<br>
+He is mighty</p>
+<p>Hesir hashem mishpotaich<br>
+Pina oyvech<br>
+Melech Israel Adonai<br>
+Bekir Bech Al tirai</p>
+
+
+</body>
+</html>

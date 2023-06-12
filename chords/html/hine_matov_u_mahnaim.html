@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,20 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Hine mahtov u mahnaim</h1>
+<p>Hine mahtov u manahim schewet achim gam jachat. 2x</p>
+<p>Hine mahtov schewet achim gam jachat. 2x</p>
+<p>Hineh mahtov, hineh mahtov, la la lai la la lai la la la lai lai.</p>
+<p>Quão bom e agradável é<br>
+Que irmãos vivam em comunhão<br>
+Quão bom e agradável é<br>
+Que irmãos vivam em comunhão<br>
+Em unidade (em unidade)<br>
+Lai lai lai lai lai, lai lai lai lai lai<br>
+Em unidade (em unidade)<br>
+Lai lai lai lai lai, lai lai lai lai lai</p>
+<p>(Seht, wie fein und wie lieblich es ist, wenn Brüder in Einheit zusammen sind.)</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

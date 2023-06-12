@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,39 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>El Shaddai</h1>
+<p>El Shaddai, El Shaddai,<br>
+el el yo na Adonai,<br>
+du bleibst Gott in Ewigkeit<br>
+auch im Wandel dieser Zeit,</p>
+<p>El Shaddai, El Shaddai,<br>
+Er kam kana Adonai,<br>
+deine Liebe macht uns frei,<br>
+El Shaddai!</p>
+<p>Du hast dich geoffenbart,<br>
+Abraham in Not bewahrt,<br>
+seinen lang ersehnten Sohn<br>
+durch des Widders Blut verschont<br>
+und durch Meer und Wüstensand,<br>
+führtest du mit starker Hand<br>
+dein Israel in das verheiss'ne Land!</p>
+<p>Du hast dich geoffenbart,<br>
+als die Zeit erfüllet ward,<br>
+und durch deinen grossen Plan<br>
+Jesus Christus zu uns kam,<br>
+doch sie nahmen ihn nicht auf,<br>
+nahmen Barrabas in Kauf,<br>
+lehnten den Messias ab,<br>
+der für ihre Rettung starb!</p>
+<p>El Shaddai, El Shaddai,<br>
+El el yo na Adonai,<br>
+du hast Israel befreit<br>
+aus Ägyptens Sklaverei,</p>
+<p>El Shaddai, El Shaddai,<br>
+Er kam kana Adonai,<br>
+dir sei Dank in Ewigkeit,<br>
+El Shaddai.</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

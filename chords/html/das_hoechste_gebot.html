@@ -1,0 +1,86 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <h1>Das höchste Gebot</h1>
+<p>Lass mich deinen Weg erkennen,<br>
+mit göttlicher Weisung schmücke mein Haupt,<br>
+gib mir Einsicht und Erkenntnis, Herr,<br>
+so werde ich erbaut!</p>
+<p>Ein Schatz tief in meinem Innern<br>
+ist dein wunderbares und mächtiges Wort,<br>
+dein Gebot zeigt mir den rechten Pfad<br>
+zu dir hin, mein Zufluchtsort!</p>
+<p>O mein Gott, ich will dich immer lieben,<br>
+mit ganzer Kraft und all meinem Verstand,<br>
+möge meine Seele ewig treu dir sein<br>
+und mein Herz nur auf dich hör'n, o Gott!</p>
+<p>Mit ganzer Kraft will ich dich suchen,<br>
+Weisheit öffne mein Herz mir weit,<br>
+damit meine Seele die Erkenntnis liebt<br>
+und mein Verstand Besonnenheit!</p>
+<p>O mein Gott, ich will dich immer lieben,<br>
+mit ganzer Kraft und all meinem Verstand,<br>
+möge meine Seele ewig treu dir sein<br>
+und mein Herz nur auf dich hör'n,</p>
+<p>O Gott, ich will dich immer lieben<br>
+und meinen Nächsten wie mich selbst,<br>
+um zu erfüll'n, das höchste Gebot,<br>
+so wie es dir gefällt,</p>
+<p>Mein Gott, ich will dich immer lieben,<br>
+mit ganzer Kraft und all meinem Verstand,<br>
+möge meine Seele ewig treu dir sein<br>
+und mein Herz nur auf dich hör'n, o Gott,<br>
+allmächtiger Gott!</p>
+
+
+</body>
+</html>

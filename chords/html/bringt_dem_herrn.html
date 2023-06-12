@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,12 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Bringt dem Herrn, o ihr Kinder des Höchsten</h1>
+<p>Bringt dem Herrn, o ihr Kinder des Höchsten, bringt dem Herrn Ehre und Preis! Bringt dem Herrn seines Namens Würde, betet an in heiliger Pracht!<br>
+Gottes Stimme schallt über den Wassern, Gottes Donner dröhnt in Herrlichkeit, unsers Vater Schrei ist voller Stärke, unser Vater ruft gewaltig und schön!<br>
+Gottes Stimme bricht Libanons Zedern, hüpfen lässt er sie, so wie ein Kalb, unsers Vaters Schrei sprüht voller Flammen, unser Vater ruft, die Wüste erbebt!<br>
+Unser Vater thront über den Wassern, er bleibt königlich in Ewigkeit, „Ehre!“, rufen wir in seinem Tempel. „Segne du dein Volk mit Frieden und Kraft!“</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

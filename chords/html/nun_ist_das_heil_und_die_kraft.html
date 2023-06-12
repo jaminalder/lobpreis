@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,21 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Nun ist das Heil und die Kraft</h1>
+<p>Nun ist das Heil und die Kraft,<br>
+nun ist das Reich unseres Gottes,<br>
+nun  ist die Autorität seines Christus gekommen!</p>
+<p>Der Verkläger wurde gestürzt,<br>
+der uns Tag und Nacht verklagte,<br>
+doch für uns setzt Jesus sich beim Vater ein.</p>
+<p>Seht den Herrn auf weissem Pferd,<br>
+er heisst „Treu“, er heisst „Wahrhaftig“<br>
+und er kämpft und richtet in Gerechtigkeit.</p>
+<p>Du errichtest heute dein Reich,<br>
+keine Macht kann es zerstören,<br>
+alles stellst du wieder her, was Gott geplant.</p>
+<p>Amen, Amen, Amen, Amen, Amen,Amen!</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

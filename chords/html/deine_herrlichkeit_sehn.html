@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,12 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Deine Herrlichkeit seh'n</h1>
+<p>Vater aller Schöpfung, zeig deinen göttlichen Plan! Dein Volk, das du dir erwählt hast, o lass es aufsteh'n im Land. Die ganze Schöpfung sehnt sich, dass du dich zeigst in deiner Macht. Giess Deine Salbung auf uns, lass dies die Stunde sein!</p>
+<p>Lass uns deine Herrlichkeit seh'n, lass sie weiter geh'n zu den Völkern. Deine Nähe füllt diesen Raum, denn wir suchen dein Angesicht.</p>
+<p>Herrscher aller Völker, lass die Welt endlich seh'n , die Fülle deiner Verheissung, deine Gemeinde im Sieg, komm zu uns und berühr' uns, rüst uns aus mach uns stark. Überwind unsere Schwachheit, damit wir aufsteh'n zum Kampf!</p>
+<p>Dein Reich komme, Herr, dass dein Wille gescheh'! Lass uns auf Erden seh'n Jesus in Herrlichkeit.</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

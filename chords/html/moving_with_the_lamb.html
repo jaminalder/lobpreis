@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,20 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Moving with the Lamb</h1>
+<p>For I'm moving with the Lamb,<br>
+moving with the Lamb, I'm surrounded.</p>
+<p>I´m strolling with the Lamb,<br>
+strolling with the King of kings,</p>
+<p>stepping with the Lamb,<br>
+stepping over my sins.</p>
+<p>For I'm dressed in a holy robe of God, I'm surrounded,<br>
+by the host of heaven's court and the King of kings,<br>
+and I drink from the holy cup of God, I'm surrounded,</p>
+<p>I'm moving with the Lamb,<br>
+I'm strolling with the Lamb,<br>
+I´m stepping with the Lamb.</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

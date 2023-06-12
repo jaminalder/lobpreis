@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,28 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Du wendest unser Geschick</h1>
+<p>Du wendest unser Geschick,<br>
+wir kehren Heim zu dir.<br>
+Du führst uns wieder zurück,<br>
+nach Zion kommen wir.</p>
+<p>Wie die Träumenden, wie die Träumenden,<br>
+unser Mund ist voller Lachen,<br>
+unsere Zunge jubelt dir.</p>
+<p>Wie die Träumenden, wie die Träumenden,<br>
+bei den Völkern wird man sagen,<br>
+Grosses hat der Herr an ihnen getan.</p>
+<p>Du hast uns Grosses getan,<br>
+du hast uns froh gemacht,<br>
+unsere Gefangenen, Herr,<br>
+bring auch zu uns zurück.</p>
+<p>Wie die Träumenden, wie die Träumenden,<br>
+so wie Bäche in der Wüste<br>
+aus dem heissen Mittagsland.</p>
+<p>Wie die Träumenden, wie die Träumenden,<br>
+die den Samen weinend säen,<br>
+bringen jubelnd ihre Garben nach Haus.</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

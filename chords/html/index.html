@@ -1,0 +1,233 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <h1>Inhalt</h1>
+<ul>
+<li>
+<p><a href="adoramos.md">Adoramos</a></p>
+</li>
+<li>
+<p><a href="all_honour.md">All honour</a></p>
+</li>
+<li>
+<p><a href="as_the_mountains_are_around_jerusalem.md">As the mountains are around Jerusalem</a></p>
+</li>
+<li>
+<p><a href="auf_dir_ruht_der_geist_des_herrn.md">Auf dir ruht der Geist des Herrn</a></p>
+</li>
+<li>
+<p><a href="bleibend_ist_deine_treu.md">Bleibend ist deine Treu</a></p>
+</li>
+<li>
+<p><a href="brilha_jesus.md">Brilha Jesus ( shine, Jesus, shine)</a></p>
+</li>
+<li>
+<p><a href="bringt_dem_herrn.md">Bringt dem Herrn, o ihr Kinder des Höchsten</a></p>
+</li>
+<li>
+<p><a href="canta_minh_alma.md">Canta Minh'alma, canta ao Senhor!</a></p>
+</li>
+<li>
+<p><a href="castelo_forte.md">Castelo Forte</a></p>
+</li>
+<li>
+<p><a href="deine_herrlichkeit_sehn.md">Deine Herrlichkeit seh'n</a></p>
+</li>
+<li>
+<p><a href="du_bist_sieger.md">Du bist Sieger</a></p>
+</li>
+<li>
+<p><a href="du_grosser_gott.md">Du grosser Gott</a></p>
+</li>
+<li>
+<p><a href="du_wendest_unser_geschick.md">Du wendest unser Geschick </a></p>
+</li>
+<li>
+<p><a href="ein_feste_burg.md">Ein' feste Burg ist unser Gott</a></p>
+</li>
+<li>
+<p><a href="eis_a_ordem_do_senhor.md">Eis a ordem do Senhor</a></p>
+</li>
+<li>
+<p><a href="el_shaddai.md">El Shaddai</a></p>
+</li>
+<li>
+<p><a href="ewig_dein.md">Ewig dein</a></p>
+</li>
+<li>
+<p><a href="gemeinsam_beduerftig.md">Gemeinsam, bedürftig</a></p>
+</li>
+<li>
+<p><a href="give_thanks.md">Give thanks </a></p>
+</li>
+<li>
+<p><a href="gottest_geist_bewegt_die_herzen.md">Gottes Geist bewegt die Herzen</a></p>
+</li>
+<li>
+<p><a href="gross_und_wunderbar.md">Gross und wunderbar</a></p>
+</li>
+<li>
+<p><a href="heilig_heilig_heilig.md">Heilig, heilig, heilig</a></p>
+</li>
+<li>
+<p><a href="himmlischer_vater.md">Himmlischer Vater</a></p>
+</li>
+<li>
+<p><a href="hine_matov_u_mahnaim.md">Hine mahtov u mahnaim</a></p>
+</li>
+<li>
+<p><a href="iave.md">Iavé</a></p>
+</li>
+<li>
+<p><a href="in_the_kingdom.md">In the Kingdom</a></p>
+</li>
+<li>
+<p><a href="in_your_arms.md">In your arms</a></p>
+</li>
+<li>
+<p><a href="in_your_presence.md">In your presence, o God</a></p>
+</li>
+<li>
+<p><a href="jeschua_hamaschiach.md">Jeschua Hamaschiach</a></p>
+</li>
+<li>
+<p><a href="jesus_hoechster_name.md">Jesus, höchster Name</a></p>
+</li>
+<li>
+<p><a href="kadosch.md">Kadosch</a></p>
+</li>
+<li>
+<p><a href="komm_heiliger_geist_leite_mich.md">Komm, Heiliger Geist, leite mich</a></p>
+</li>
+<li>
+<p><a href="majestaet_herrliche_majestaet.md">Majestät, herrliche Majestät </a></p>
+</li>
+<li>
+<p><a href="mein_fels.md">Mein Fels</a></p>
+</li>
+<li>
+<p><a href="moving_with_the_lamb.md">Moving with the Lamb</a></p>
+</li>
+<li>
+<p><a href="nimm_ein_das_gute_land.md">Nimm ein das gute Land</a></p>
+</li>
+<li>
+<p><a href="nosso_deos_e_soberano.md">Nosso Deus é soberano</a></p>
+</li>
+<li>
+<p><a href="nur_dein_blut.md">Nur dein Blut</a></p>
+</li>
+<li>
+<p><a href="o_herr_giess_die_sroeme_des_lebendigen_wassers_aus.md">O Herr, giess die Ströme des lebendigen Wassers aus</a></p>
+</li>
+<li>
+<p><a href="o_herr_lass_meine_liebe_zu_dir_nie_erkalten.md">O Herr, lass meine Liebe zu dir nie erkalten</a></p>
+</li>
+<li>
+<p><a href="oracao.md">Oração</a></p>
+</li>
+<li>
+<p><a href="our_god.md">Our God</a></p>
+</li>
+<li>
+<p><a href="quao_grande_es_tu.md">Quão grande és tu</a></p>
+</li>
+<li>
+<p><a href="ruach.md">Ruach</a></p>
+</li>
+<li>
+<p><a href="seligstes_wissen.md">Seligstes Wissen: Jesus ist mein!</a></p>
+</li>
+<li>
+<p><a href="shalom_chaverim.md">Shalom chaverim</a></p>
+</li>
+<li>
+<p><a href="shine_jesus_shine.md">Shine, Jesus, shine!</a></p>
+</li>
+<li>
+<p><a href="shouts_of_joy.md">Shouts of joy</a></p>
+</li>
+<li>
+<p><a href="siehe_wie_fein_und_wie_lieblich_ist.md">Siehe, wie fein und wie lieblich ist</a></p>
+</li>
+<li>
+<p><a href="staunend_stehe_ich_vor_dir.md">Staunend stehe ich vor dir</a></p>
+</li>
+<li>
+<p><a href="tu_es_fiel_senhor.md">Tu és fiel, Senhor</a></p>
+</li>
+<li>
+<p><a href="unser_gott.md">Unser Gott</a></p>
+</li>
+<li>
+<p><a href="unsere_augen_werden_den_koenig_sehn.md">Unsere Augen werden den König seh'n</a></p>
+</li>
+<li>
+<p><a href="vater_mach_uns_eins.md">Vater, mach uns eins</a></p>
+</li>
+<li>
+<p><a href="vater_vater_aller_vaterschaft.md">Vater, Vater, aller Vaterschaft</a></p>
+</li>
+<li>
+<p><a href="wuerdig_und_herrlich_ist_das_lamm.md">Würdig und herrlich ist das Lamm</a></p>
+</li>
+<li>
+<p><a href="yahweh.md">Yahweh</a></p>
+</li>
+<li>
+<p><a href="index_all.md">archiv</a></p>
+</li>
+</ul>
+
+
+</body>
+</html>

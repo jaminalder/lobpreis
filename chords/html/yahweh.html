@@ -1,0 +1,89 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <h1>Yahweh</h1>
+<p>Don't vou know have you not heard<br>
+The Lord our God is everlasting<br>
+Don't vou know have you not heard<br>
+He is the Creator of the ends of the earth<br>
+Don't you know have you not heard<br>
+The Lord our God is strong and mighty<br>
+He does not faint, He is unsearchable And He gives power to the weak<br>
+To those who have no might He gives strength<br>
+Those who trust in Him will stand up and not stumble again<br>
+They will all mount up like eagles<br>
+Spread their wings and fly up high<br>
+They will run and not be tired<br>
+They will walk and not grow weary again<br>
+Spread your wings towards the sky<br>
+Like an eagle fly high<br>
+Higher, higher and higher!</p>
+<h1>Iavé</h1>
+<p>Não ouviste ainda as novas<br>
+de que lavé é Deus eterno<br>
+não ouviste ainda as novas<br>
+Ele criou todos os céus e a terra<br>
+não ouviste ainda as novas<br>
+nosso Deus é forte e poderoso<br>
+não se cansa e insondável é dando sua força ao cansado<br>
+àquele sem vigor força dá<br>
+os que esperam no Senhor se levantam e não caem mais subirão<br>
+como as águias nas alturas voarão<br>
+estes correm e não se cansam<br>
+sem fadiga para sempre andarão<br>
+abre as asas para os céus<br>
+voa como a grande águia<br>
+alto, alto e mais alto, alto, alto e mais alto</p>
+
+
+</body>
+</html>

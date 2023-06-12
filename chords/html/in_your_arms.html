@@ -1,0 +1,84 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <h1>In your arms</h1>
+<p>You know all about me<br>
+and everything I do,<br>
+Lord, you know my thoughts from far away!</p>
+<p>Your strong right hand protects me,<br>
+I can feel it on my shoulder and your Spirit is everywhere I go!</p>
+<p>You are all around, in front of me and behind!</p>
+<p>In your arms, Lord I am safe,<br>
+Sourrounded by your holiness and grace,<br>
+Your arms, Lord, are my hiding place,<br>
+The place where I belong and where I'm strong,<br>
+In your arms!</p>
+<p>You formed me, my Creator, in an amazing way,<br>
+you could see me grow each passing day.<br>
+Examine me and test me,<br>
+Let my mind have understanding,<br>
+lead me on the path of righteousness!</p>
+<p>You are all around, in front of me and behind!</p>
+<p>In your arms, Lord I am safe,<br>
+Sourrounded by your holiness and grace,<br>
+Your arms, Lord, are my hiding place,<br>
+The place where I belong and where I'm strong,<br>
+In your arms!</p>
+<p>And even the dark<br>
+would be as bright as the day,<br>
+If I wanted to find a place to escape,<br>
+on the wings of the morning, over the seas,<br>
+You would take hold of me, hold of me!</p>
+
+
+</body>
+</html>

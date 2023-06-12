@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,15 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Lob, Anbetung, Ruhm und Ehre</h1>
+<p>Lob, Anbetung, Ruhm und Ehre sei dir in Ewigkeit!</p>
+<p>Preis und Jubel deinem Namen, König der Herrlichkeit!</p>
+<p>Mächtig bist du, der du das All regierst, mit starker Hand Völkergeschicke führst.</p>
+<p>Vor dir erbebt Himmel und Erd'und und Meer. Alles, was lebt muss sagen: „Du bist Herr!“</p>
+<p>Heilig bist du, der du in der Höhe thronst, unter dem Lob der Engelheere wohnst. Wer masst sich an, bei ew'ger Glut zu steh'n!</p>
+<p>Wer kann den Herrn in seiner Schönheit seh'n!</p>
+<p>Liebe bist du, die stark und ewig liebt und überfliesst auf den, der sich dir gibt, göttliche Lieb', die in den Tod sich gibt, die um  uns wirbt und uns nach Hause führt!</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

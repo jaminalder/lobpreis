@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,20 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Unsere Augen werden den König seh'n</h1>
+<p>Unsere Augen werden den König seh'n,<br>
+in Schönheit und Kraft,<br>
+wenn er seinen Fuss auf den Ölberg setzt<br>
+und wieder kommt in Macht,</p>
+<p>dann werden die Völker Jerusalem seh'n<br>
+in herrlichem Glanz,<br>
+die Braut wird dem Bräut'gam entgegen geh'n<br>
+mit Jubel und Tanz.</p>
+<p>Gelobt sei, der kommt, im Namen des Herrn! (3x)</p>
+<p>Im Namen des Herrn, im Namen des Herrn, im Namen des Herrn!</p>
+<p>Jesus, Friedefürst, Jeschua Hamaschiach,<br>
+Gottes Lamm, Bräutigam, wir beten dich an!</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

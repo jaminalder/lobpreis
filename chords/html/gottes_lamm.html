@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,20 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Gottes Lamm</h1>
+<p>Gottes Lamm, du regierst in mir!<br>
+Gottes Lamm, ich gehöre dir!<br>
+Gottes Lamm, o du lebst in mir!<br>
+Gottes Lamm, ich vertraue dir!</p>
+<p>Für mich bist du Gottes Lamm, du gabst für mich dein Blut.<br>
+Hast aus allen Stämmen, Sprachen, Völkern uns erkauft.<br>
+Du machst uns zu Königen, Priestern unserem Gott<br>
+und auf Erden werden wir wieder königlich!</p>
+<p>Für mich bist du Gottes Lamm, die Siegel aufzutun.<br>
+Löwe aus dem Stamme Juda, Davids Wurzelspross.<br>
+Lobpreis, Ehre, Herrlichkeit, Macht in Ewigkeit<br>
+dem, der auf dem Throne sitzt, Jesus unsrem Herrn!</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

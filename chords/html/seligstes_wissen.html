@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,24 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <p># Seligstes Wissen: Jesus ist mein!</p>
+<p>Seligstes Wissen: Jesus ist mein!
+Köstlichen Frieden bringt es mir ein.
+Leben von oben, ewiges Heil,
+völlige Sühnung ward mir zu teil.</p>
+<p>Lasst mich's erzählen, Jesus zur Ehr;
+sag, wo ist jemand grösser als er?
+Wer kann so segnen, wer so erfreun?
+Keiner als Jesus! Preis ihm allein!</p>
+<p>Ihm will ich leben, o welche Freud!
+Herrliche Gaben Jesus mir beut:
+Göttliche Leitung, Schutz in Gefahr,
+Sieg über Sünde reicht er mir dar.</p>
+<p>Völlig sein eigen! Nichts such ich mehr;
+Jesus, er stillet all mein Begehr.
+Treu will ich dienen ihm immerdar,
+bis ich gelang zur oberen Schar.</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

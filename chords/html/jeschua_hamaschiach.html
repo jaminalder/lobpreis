@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,18 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Jeschua Hamaschiach</h1>
+<p>Jeschua Hamaschiach, Gottes Sohn,<br>
+Jeschua Hamaschiach, auf dem Thron,<br>
+wir ehren deinen Namen, wir beten dich an,<br>
+wir ehren deinen Namen, wir beten dich an!</p>
+<p>Ua ua, Herr der Herrn, ua ua, Morgenstern,<br>
+du regierst die Völker mit eisernem Stab,<br>
+du bist auferstanden aus dem Grab.</p>
+<p>Ua ua, Gottes Lamm, ua ua, aus Judas' Stamm,<br>
+wir warten auf dein Kommen und rufen:<br>
+„Ja, komme bald, Herr Jesus, Maranatha!“</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

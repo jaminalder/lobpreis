@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,13 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Oração</h1>
+<p>Senhor Jesus querido, Jesus do meu coração, te amarei toda vida com grande devoção.</p>
+<p>É tua esta palavra, foste minha inspiração, canto, canto, Jesus querido, a minha oração:</p>
+<p>Vai vencer, Boanerges, vai vencer, subirá com Jesus. Vai vencer, como águia voará, levando a mensagem da cruz.</p>
+<p>O Boanerges, Igreja querida, Jesus é tudo o que eu tenho na vida. Eu  te ofereço a minha oração, Boanerges do coração!</p>
+<p>Du bist Sieger, Boanerges, du bist Sieger, in den Höhen mit Jesus. Steig empor, wie die Adler sich erheben, sing des Kreuzes Ruhm und Leben.</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

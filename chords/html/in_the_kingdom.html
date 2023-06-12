@@ -1,0 +1,94 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+</head>
+<style>
+:root {
+	--chord-diagram-font-size: 10px;
+}
+.chord {
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
+}
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
+}
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
+}
+.chord i {
+	font-style: normal;
+	display: inline-block;
+}
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
+}
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
+}
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
+}
+</style>
+
+<body>
+
+  <h1>In the Kingdom</h1>
+<p>Saw the headlines just the other day<br>
+Said the wall's comin' down<br>
+Said the peace is just a breath away<br>
+One world, one voice, one happy family<br>
+Yeah, that's what the world believes</p>
+<p>I read my Bible just the other day Said the Kingdom's comin' down<br>
+Jesus said the Kingdom's just a prayer away<br>
+One Lord, one God, one faith eternally<br>
+Yeah that's what the church believes</p>
+<p>We're alive, we are strong<br>
+We're a nation, we belong<br>
+Let us all stand together in the Kingdom<br>
+No more darkness, no more night<br>
+We are children of the light<br>
+Let us all work together in the Kingdom</p>
+<p>Heard a newsman just the other day<br>
+He said a war was comin' down<br>
+He said destruction was just a breath away<br>
+One world, one war, one awesome tragedy<br>
+Yeah, that's what the world believes</p>
+<p>I heard a preacher just the other day<br>
+He said God's glory's comin' down<br>
+Just as the waters cover all the seas <br>
+One King, one crown, one reign forevermore<br>
+Yeah that's what we have and more</p>
+<p>We're alive, we are strong<br>
+We're a nation, we belong<br>
+Let us all stand together in the Kingdom<br>
+No more darkness, no more night<br>
+We are children of the light<br>
+Let us all work together in the Kingdom</p>
+<p>One Lord, one God<br>
+One name above all names<br>
+Let us all stand together in the Kingdom<br>
+One King, one crown<br>
+One reign forevermore<br>
+All work together in the Kingdom</p>
+
+
+</body>
+</html>

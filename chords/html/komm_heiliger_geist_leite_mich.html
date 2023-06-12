@@ -1,20 +1,4 @@
-#!/usr/bin/env node
-'use strict'
-
-const fs = require('fs');
-const path = require('path');
-const md = require('markdown-it')()
-  .use(require('markdown-it-chords'));
-
-var files = fs.readdirSync('./chords/md');
-for (var i = 0; i < files.length; i++) {
-
-  const input_md = fs.readFileSync('./chords/md/' + files[i], { encoding: 'utf8' });
-  //console.log(input_md);
-  const generated_song = md.render(input_md);
-  //console.log(generated_song);
-
-  let output = `<html>
+<html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,13 +50,12 @@ for (var i = 0; i < files.length; i++) {
 
 <body>
 
-  ${generated_song}
+  <h1>Komm, Heiliger Geist, leite mich</h1>
+<p>Komm, Heiliger Geist, leite mich! Nimm mich hin in des Vaters Gegenwart. Jesus, du hast den Weg für mich frei gemacht, o grosse Gnade, himmlischer Vater.</p>
+<p>Ich will dich sehen, wie du wirklich bist, in aller deiner Herrlichkeit.</p>
+<p>Ich will dir geben, was dir gehört. Ich will dein Anbeter sein. Ich will dein Anbeter sein.</p>
+<p>Wir heben hoch, hoch, hoch den Namen Jesus. Wir heben hoch, hoch, Christus, unsern Herrn. Wir preisen dich, du allein bist König, dir nur allein gehört die Ehre!</p>
+
 
 </body>
 </html>
-`
-
-  console.log('./chords/html/' + path.parse(files[i]).name + '.html');
-  fs.writeFileSync('./chords/html/' + path.parse(files[i]).name + '.html', output);
-
-}

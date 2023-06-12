@@ -47,19 +47,61 @@
 	z-index: 5;
 }
 
+.chord {
+	font-family: Didot, "Helvetica Neue", serif;
+}
+body {
+	padding: 50px;
+	font-size: 14pt;
+	max-width: 1900px;
+	margin: 0 auto;
+}
+#sandbox div,
+#sandbox textarea {
+	width: 50%;
+	resize: none;
+	overflow: scroll;
+	float: left;
+	box-sizing: border-box;
+	padding: 10px;
+}
+code {
+	background: #eee;
+	font-size: 75%;
+}
+pre {
+	background: #eee;
+	padding: 10px 10px 0;
+	max-width: 100%;
+	overflow: scroll;
+	display: inline-block;
+}
+.clearfix:after, pre:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#controls {
+	background: lightgray;
+	padding: 10px;
+}
+#controls select,
+#controls input {
+	vertical-align: middle;
+}
 </style>
 
 <body>
 
-<p>&lt;h1&gt;Unser Gott&lt;/h1&gt;
-&lt;p&gt;&lt;span class=&quot;chord&quot;&gt;&lt;span class=&quot;inner&quot;&gt;&lt;i class=&quot;name&quot;&gt;C&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;Unser Gott &lt;span class=&quot;chord&quot;&gt;&lt;span class=&quot;inner&quot;&gt;&lt;i class=&quot;name&quot;&gt;E&lt;/i&gt;&lt;/span&gt;&lt;/span&gt;ist ein mächtiger Gott, er herrscht&lt;br&gt;
-vom Himmel herab&lt;br&gt;
-mit Weisheit, Liebe und Kraft,&lt;br&gt;
-unser Gott ist ein mächtiger Gott!&lt;/p&gt;
-&lt;p&gt;Our God is an awesome God he reigns&lt;br&gt;
-from heaven above&lt;br&gt;
-with wisdom, power and Love&lt;br&gt;
-our God is an awesome God&lt;/p&gt;</p>
+<h1>Unser Gott</h1>
+<p>Unser G<span class="chord"><span class="inner"><i class="name">Em</i></span></span>ott ist ein m<span class="chord"><span class="inner"><i class="name">G</i></span></span>ächtiger Gott, er h<span class="chord"><span class="inner"><i class="name">D</i></span></span>errscht<br>
+vom H<span class="chord"><span class="inner"><i class="name">Em</i></span></span>immel herab<br>
+mit Weish<span class="chord"><span class="inner"><i class="name">C</i></span></span>eit, Liebe und Kr<span class="chord"><span class="inner"><i class="name">G</i></span></span>aft,<br>
+unser G<span class="chord"><span class="inner"><i class="name">D</i></span></span>ott ist ein mächtiger G<span class="chord"><span class="inner"><i class="name">Em</i></span></span>ott!</p>
+<p>Our G<span class="chord"><span class="inner"><i class="name">Em</i></span></span>od is an <span class="chord"><span class="inner"><i class="name">G</i></span></span>awesome God he r<span class="chord"><span class="inner"><i class="name">D</i></span></span>eigns<br>
+from h<span class="chord"><span class="inner"><i class="name">Em</i></span></span>eaven above<br>
+with w<span class="chord"><span class="inner"><i class="name">C</i></span></span>isdom, power and L<span class="chord"><span class="inner"><i class="name">G</i></span></span>ove<br>
+our G<span class="chord"><span class="inner"><i class="name">D</i></span></span>od is an awesome G<span class="chord"><span class="inner"><i class="name">Em</i></span></span>od</p>
 
 
 </body>

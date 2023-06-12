@@ -10,8 +10,6 @@ console.log(input_md);
 const generated_song = md.render(input_md);
 console.log(generated_song);
 
-let styles = fs.readFileSync('./node_modules/markdown-it-chords/markdown-it-chords.css', { encoding: 'utf8' })
-
 let output = `<html>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,48 +19,44 @@ let output = `<html>
 	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
 </head>
 <style>
-${styles}
+:root {
+	--chord-diagram-font-size: 10px;
+}
 .chord {
-	font-family: Didot, "Helvetica Neue", serif;
+	display: inline-block;
+	position: relative;
+	user-select: none;
+	height: 3.2em;
+	font-size: 70%;
 }
-body {
-	padding: 50px;
-	font-size: 14pt;
-	max-width: 1900px;
-	margin: 0 auto;
+.chord.diagram {
+	height: calc(1.5em + (3.5 * var(--chord-diagram-font-size)))
 }
-#sandbox div,
-#sandbox textarea {
-	width: 50%;
-	resize: none;
-	overflow: scroll;
-	float: left;
-	box-sizing: border-box;
-	padding: 10px;
+.chord .inner {
+	position: absolute;
+	display: block;
+	left: 0;
+	bottom: 1.3em;
 }
-code {
-	background: #eee;
-	font-size: 75%;
-}
-pre {
-	background: #eee;
-	padding: 10px 10px 0;
-	max-width: 100%;
-	overflow: scroll;
+.chord i {
+	font-style: normal;
 	display: inline-block;
 }
-.clearfix:after, pre:after {
-	content: "";
-	display: table;
-	clear: both;
+.chord i.diagram {
+	font: 100 var(--chord-diagram-font-size) Courier;
+	line-height: .5em;
+	position: absolute;
+	bottom: 0;
+	display: none;
 }
-#controls {
-	background: lightgray;
-	padding: 10px;
+.chord .inner:hover i.diagram,
+.chord.diagram i.diagram,
+.chord i.diagram.show {
+	display: inline-block;
 }
-#controls select,
-#controls input {
-	vertical-align: middle;
+.chord:not(.diagram) .inner:hover i.diagram {
+	background: white;
+	z-index: 5;
 }
 </style>
 

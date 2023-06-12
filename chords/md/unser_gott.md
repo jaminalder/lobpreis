@@ -1,11 +1,11 @@
 # Unser Gott
 
-Unser G[Em]ott ist ein m[G]ächtiger Gott, er h[D]errscht  
-vom H[Em]immel herab  
-mit Weish[C]eit, Liebe und Kr[G]aft,   
-unser G[D]ott ist ein mächtiger G[Em]ott!
+Unser [Em]Gott ist ein [G]mächtiger Gott, er [D]herrscht  
+vom [Em]Himmel herab  
+mit [C]Weisheit, Liebe und [G]Kraft,   
+unser [D]Gott ist ein mächtiger [Em]Gott!
 
-Our G[Em]od is an [G]awesome God he r[D]eigns   
-from h[Em]eaven above  
-with w[C]isdom, power and L[G]ove  
-our G[D]od is an awesome G[Em]od
+Our [Em]God is an [G]awesome God he [D]reigns   
+from [Em]heaven above  
+with [C]wisdom, power and [G]Love  
+our [D]God is an awesome [Em]God

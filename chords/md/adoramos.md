@@ -1,5 +1,6 @@
 # Adoramos
 
+G D Em C D G
 Adoramos, adoramos, aquele que venceu!  
 Adoramus, adoramos, a Cristo o vencedor!
 
@@ -15,8 +16,10 @@ que não possa arrebentar.
 
 # Du bist Sieger
 
-Du bist Sieger, du bist Sieger, wir beten dich an.  
-Du bist Sieger, du bist Sieger, du hast für uns gesiegt.
+
+
+[G]Du bist [D]Sieger, du bist [Em]Sieger, wir [C]beten[D] dich [G]an.  
+[G]Du bist [D]Sieger, du bist [Em]Sieger, du [C]hast für [D]uns [G]gesiegt.
 
 Und es gibt keine Sünde noch Schuld,  
 grösser als deine Liebe,  

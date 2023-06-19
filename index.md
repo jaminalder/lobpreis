@@ -1,6 +1,6 @@
 # Inhalt
 
-* [Adoramos](adoramos.md)
+* [Adoramos](adoramos.md) [&#9835](./chords/html/adoramos.html)
 * [All honour](all_honour.md)
 * [As the mountains are around Jerusalem](as_the_mountains_are_around_jerusalem.md)
 * [Auf dir ruht der Geist des Herrn](auf_dir_ruht_der_geist_des_herrn.md)
@@ -56,6 +56,7 @@
 * [Vater, mach uns eins](vater_mach_uns_eins.md)
 * [Vater, Vater, aller Vaterschaft](vater_vater_aller_vaterschaft.md)
 * [Würdig und herrlich ist das Lamm](wuerdig_und_herrlich_ist_das_lamm.md)
+* [Wunderbarer Gott](wunderbarer_gott.md)
 * [Yahweh](yahweh.md)
 
 

@@ -20,7 +20,7 @@ for (var i = 0; i < files.length; i++) {
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>markdown-it-chords: Write your lyric sheets in markdown</title>
+	<title>${path.parse(files[i]).name}</title>
 </head>
 <style>
 :root {

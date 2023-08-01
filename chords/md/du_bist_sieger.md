@@ -1,29 +1,29 @@
 # Du bist Sieger
 
-Du bist Sieger, du bist Sieger, wir beten dich an.  
-Du bist Sieger, du bist Sieger, du hast für uns gesiegt.
+[G]Du bist [D]Sieger, du bist [Em]Sieger, wir [C]beten[D] dich [G]an.  
+[G]Du bist [D]Sieger, du bist [Em]Sieger, du [C]hast für [D]uns [G]gesiegt.
 
-Und es gibt keine Sünde noch Schuld,  
-grösser als deine Liebe,  
-und nichts, was wir tun,  
-das du uns nicht vergibst.  
+Und es [Em]gibt keine Sünde noch Schuld,  
+[G]grösser als deine Liebe,  
+und [C]nichts, was wir [Em]tun,  
+das du [D]uns nicht [D]vergibst.  
 
-Keine Macht dieser Welt,  
-kann dich besiegen,  
-keine Ketten, die bedrücken,  
-die du nicht sprengen kannst.
+Keine [G]Macht dieser Welt,  
+kann [Em]dich besiegen,  
+keine [C]Ketten, die [C]bedrücken,  
+die du [D]nicht sprengen [G]kannst.
 
 # Adoramos
 
-Adoramos, adoramos, aquele que venceu!  
-Adoramus, adoramos, a Cristo o vencedor!
+[G]Adoramos[D], [Em]adoramos[C], aquele[D] que [G]venceu!  
+[G]Adoramus[D], [Em]adoramos[C], a [D]Cristo o [G]vencedor!
 
-E não  há pecado ou culpa  
-maior que o seu amor.  
-Não há nada que façamos  
-que não possa perdoar. 
+E não [Em]há pecado ou culpa  
+[G]maior que o seu amor.  
+Não há [C]nada que [Em]façamos  
+que não [D]possa [D]perdoar. 
 
-Não há forca nessa terra  
-que não possa derrotar,  
-nem cadeias oppressoras  
-que não possa arrebentar.
+Não há [G]forca nessa terra  
+que não [Em]possa derrotar,  
+nem [C]cadeias [C]oppressoras  
+que não [D]possa [G]arrebentar.

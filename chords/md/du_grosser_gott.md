@@ -1,56 +1,57 @@
 ﻿# Du grosser Gott
 
-Du grosser Gott, wenn ich die Welt betrachte, 
-die du geschaffen durch dein Allmachtswort, 
-wenn ich auf alle jene Wesen achte, 
-die du regierst und nährest fort und fort,
+Du grosser [G]Gott, wenn ich die Welt [C]betrachte, 
+die du [D]geschaffen durch dein [G]Allmachtswort, 
+wenn ich auf [G]alle jene Wesen [C]achte, 
+die du [D]regierst und nährest fort und [G]fort,
 
-dann jauchzt mein Herz dir, grosser Herrscher, zu:
-Wie gross bist du! Wie gross bist du!
-Dann jauchzt mein Herz dir, grosser Herrscher, zu:
-Wie gross bist du! Wie gross bist du!
+dann jauchzt mein [G]Herz dir, [C]grosser [G]Herrscher, zu:
+[Em]Wie gross bist [Am]du! Wie [D+]gross bist [G]du!
+Dann jauchzt mein [G]Herz dir, [C]grosser [G]Herrscher, zu:
+[Em]Wie gross bist [Am]du! Wie [D+]gross bist [G]du!
 
-Blick ich empor zu jenen lichten Welten 
-und seh der Sterne unzählbare Schar, 
-wie Sonn und Mond im lichten Äther zelten, 
-gleich goldnen Schiffen hehr und wunderbar,
+Blick ich [G]empor zu jenen lichten [C]Welten 
+und seh der [D]Sterne unzählbare [G]Schar, 
+wie Sonn und [G]Mond im lichten Äther [C]zelten, 
+gleich goldnen [D]Schiffen hehr und [G]wunderbar,
 
-Wenn mir der Herr in seinem Wort begegnet, 
-wenn ich die grossen Gnadentaten seh, 
-wie er das Volk des Eigentums gesegnet, 
-wie er's geliebt, begnadigt je und je,
+Wenn mir der [G]Herr in seinem Wort [C]begegnet, 
+wenn ich die [D]grossen Gnadentaten [G]seh, 
+wie er das [G]Volk des Eigentums [C]gesegnet, 
+wie er's [D]geliebt, begnadigt je und [G]je,
 
-Und seh ich Jesus auf der Erde wandeln 
-in Knechtgestalt, voll Lieb und grosser Huld, 
-wenn ich im Geiste seh sein göttlich Handeln, 
-am Kreuz bezahlen vieler Sünder Schuld,
+Und seh ich [G]Jesus auf der Erde [C]wandeln 
+in Knechtgestalt[D], voll Lieb und grosser [G]Huld, 
+wenn ich im [G]Geiste seh sein göttlich [C]Handeln, 
+am Kreuz [D]bezahlen vieler Sünder [G]Schuld,
+
 
 # Quão grande és tu
 
-Senhor meu Deus, quando eu maravilhado
-Fico a pensar nas obras de Tuas mãos
-O céu azul de estrelas pontilhado
-O Seu poder mostrando a criação
+Senhor meu [G]Deus, quando eu [C]maravilhado
+Fico a [D]pensar nas obras de Tuas [G]mãos
+O céu [G]azul de estrelas [C]pontilhado
+O Seu poder [D]mostrando a [G]criação
 
-Então minh'alma canta a Ti, Senhor
-Quão grande és Tu
-Quão grande és Tu
-Então minh'alma canta a Ti, Senhor
-Quão grande és Tu
-Quão grande és Tu
+Então minh'[G]alma [C]canta a [G]Ti, Senhor
+[Em]Quão grande és [Am]Tu
+Quão [D+]grande és [G]Tu
+Então minh'[G]alma [C]canta a [G]Ti, Senhor
+[Em]Quão grande és [Am]Tu
+Quão [D+]grande és [G]Tu
 
-Quando a vagar nas matas e florestas
-O passaredo alegre ouço a cantar
-Cruzando os montes, vales e florestas
-O Teu poder mostrando a criação
+Quando a [G]vagar nas matas e [C]florestas
+O passaredo [D]alegre ouço a [G]cantar
+Cruzando os [G]montes, vales e [C]florestas
+O Teu [D]poder mostrando a [G]criação
 
-Quando eu medi o Teu amor tão grande
-Teu Filho dando ao mundo pra salvar
-Na cruz verteu Seu precioso sangue
-Minh'alma pôde assim purificar
+Quando eu [G]medi o Teu amor tão [C]grande
+Teu Filho [D]dando ao mundo pra [G]salvar
+Na cruz [G]verteu Seu precioso [C]sangue
+Minh'alma [D]pôde assim [G]purificar
 
-E quando, enfim, Jesus vier em Glória
-E ao lar celeste então me transportar
-Eu adorarei prostrado e para sempre
-Quão grande és Tu, meu Deus, hei de cantar
+E quando, [G]enfim, Jesus vier em [C]Glória
+E ao lar [D]celeste então me [G]transportar
+Eu adorarei[G] prostrado e para [C]sempre
+Quão grande és [D]Tu, meu Deus, hei de [G]cantar
 

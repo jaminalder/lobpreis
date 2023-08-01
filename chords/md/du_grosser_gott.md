@@ -1,4 +1,5 @@
-﻿# Du grosser Gott
+﻿
+# Du grosser Gott
 
 Du grosser [G]Gott, wenn ich die Welt [C]betrachte, 
 die du [D]geschaffen durch dein [G]Allmachtswort, 

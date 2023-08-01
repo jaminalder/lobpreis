@@ -1,6 +1,6 @@
 # Inhalt
 
-* [Adoramos](adoramos.md)
+* [Adoramos](adoramos.md) ([Akkorde](./chords/html/adoramos.html))
 * [All honour](all_honour.md)
 * [As the mountains are around Jerusalem](as_the_mountains_are_around_jerusalem.md)
 * [Auf dir ruht der Geist des Herrn](auf_dir_ruht_der_geist_des_herrn.md)

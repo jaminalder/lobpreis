@@ -1,7 +1,7 @@
 # Adoramos
 
-[G]Adoramos[D], [Em]adoramos[C], aquele[D] que [G]venceu!  
-[G]Adoramus[D], [Em]adoramos[C], a [D]Cristo o [G]vencedor!
+[G]Ador[D]amos, [Em]ador[C]amos, aquele[D] que [G]venceu!  
+[G]Ador[D]amus, [Em]ador[C]amos, a [D]Cristo o [G]vencedor!
 
 E não [Em]há pecado ou culpa  
 [G]maior que o seu amor.  

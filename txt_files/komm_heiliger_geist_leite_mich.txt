@@ -1,20 +1,22 @@
 Komm, Heiliger Geist, leite mich
 --------------------------------
 
-C                                   F                          C
+C                Cmaj7              Em7              F
 Komm, Heiliger Geist, leite mich! Nimm mich hin in des Vaters Gegenwart.
-F                                                   C
+C                Cmaj7              Em7              F     Gsus    G
 Jesus, du hast den Weg für mich frei gemacht, o grosse Gnade, himmlischer Vater.
 
-Am                          F                       Am
+Am                          Dm                              F                G
 Ich will dich sehen, wie du wirklich bist, in aller deiner Herrlichkeit.
 
-Am                                F                       Am
-Ich will dir geben, was dir gehört. Ich will dein Anbeter sein. Ich will dein Anbeter sein.
+Am                          Dm                              F          A7    Dm
+Ich will dir geben, was dir gehört. Ich will dein Anbeter sein.
+F                G                C    C7
+Ich will dein Anbeter sein.
 
-F                  C                  F           C
+F                C                  F                C
 Wir heben hoch, hoch, hoch den Namen Jesus.
-F                  C                  F           C
+F                C                  F                G
 Wir heben hoch, hoch, Christus, unsern Herrn.
-F                                          G              C
+F                C                  Dm          G    C
 Wir preisen dich, du allein bist König, dir nur allein gehört die Ehre!

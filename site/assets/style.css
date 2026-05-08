@@ -1,0 +1,224 @@
+/* Lobpreis songbook — warm cream / warm dark, hand-written CSS */
+
+:root {
+  --bg: #faf5ec;
+  --fg: #2b211a;
+  --muted: #6b5a4a;
+  --accent: #b8551f;
+  --rule: #e6dcc7;
+  --btn-bg: rgba(0,0,0,0.04);
+  --btn-bg-hover: rgba(0,0,0,0.08);
+  --lyrics-size: 1.1rem;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1d1714;
+    --fg: #ece1cf;
+    --muted: #a89682;
+    --accent: #e09060;
+    --rule: #322822;
+    --btn-bg: rgba(255,255,255,0.06);
+    --btn-bg-hover: rgba(255,255,255,0.12);
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #1d1714;
+  --fg: #ece1cf;
+  --muted: #a89682;
+  --accent: #e09060;
+  --rule: #322822;
+  --btn-bg: rgba(255,255,255,0.06);
+  --btn-bg-hover: rgba(255,255,255,0.12);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100dvh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover, a:focus-visible { text-decoration: underline; }
+
+/* ---------- top bar ---------- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  padding-top: max(0.6rem, env(safe-area-inset-top));
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--fg);
+  letter-spacing: 0.02em;
+}
+.brand:hover { text-decoration: none; color: var(--accent); }
+
+.controls { display: flex; gap: 0.3rem; }
+
+.iconbtn {
+  font: inherit;
+  font-size: 0.95rem;
+  min-width: 2.2rem;
+  height: 2.2rem;
+  padding: 0 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+  background: var(--btn-bg);
+  color: var(--fg);
+  cursor: pointer;
+  line-height: 1;
+}
+.iconbtn:hover, .iconbtn:focus-visible { background: var(--btn-bg-hover); }
+.iconbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.iconbtn:active { transform: translateY(1px); }
+
+/* ---------- main wrappers ---------- */
+
+main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+  padding-bottom: max(4rem, env(safe-area-inset-bottom));
+}
+
+/* ---------- index page ---------- */
+
+.index #q {
+  width: 100%;
+  font: inherit;
+  font-size: 1.1rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.6rem;
+  background: var(--bg);
+  color: var(--fg);
+  margin-bottom: 1.2rem;
+}
+.index #q:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; border-color: var(--accent); }
+
+.letter { margin: 0 0 1.2rem; }
+.letter h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin: 1.2rem 0 0.4rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.2rem;
+}
+.letter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.letter li { margin: 0; }
+.letter li a {
+  display: block;
+  padding: 0.55rem 0.2rem;
+  color: var(--fg);
+  border-bottom: 1px solid transparent;
+}
+.letter li a:hover, .letter li a:focus-visible {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom-color: var(--rule);
+}
+
+#noresults { color: var(--muted); padding: 1rem 0.2rem; }
+
+/* ---------- song page ---------- */
+
+.song-page article.song { margin: 0 0 2.2rem; }
+.song-page article.song + article.song {
+  border-top: 1px solid var(--rule);
+  padding-top: 1.2rem;
+}
+
+.song h2 {
+  font-size: 1.4rem;
+  margin: 0.2rem 0 0.9rem;
+  letter-spacing: 0.01em;
+}
+
+.lyrics {
+  font-size: var(--lyrics-size);
+  line-height: 1.55;
+}
+
+.line {
+  margin: 0;
+  padding-top: 1.35em;
+  min-height: 1em;
+}
+
+/* blank-line stanza separator */
+.line.blank {
+  padding-top: 0;
+  height: 0.8em;
+  min-height: 0;
+}
+
+.syl {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.chord {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 0.82em;
+  line-height: 1;
+  color: var(--accent);
+  margin-bottom: 0.15em;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+
+/* hide chords toggle */
+:root.no-chords .chord { display: none; }
+:root.no-chords .lyrics .line { padding-top: 0.1em; }
+
+/* ---------- responsive niceties ---------- */
+
+@media (min-width: 600px) {
+  .topbar { padding: 0.7rem 1.2rem; }
+  .brand { font-size: 1.15rem; }
+  main { padding: 1.4rem 1.4rem 4rem; }
+  .song h2 { font-size: 1.6rem; }
+}
+
+@media (max-width: 360px) {
+  .iconbtn { min-width: 2rem; height: 2rem; font-size: 0.9rem; padding: 0 0.4rem; }
+  .brand { font-size: 0.95rem; }
+}
+
+/* avoid horizontal overflow from very long words/chords */
+.lyrics, .lyrics * { overflow-wrap: break-word; }

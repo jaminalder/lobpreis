@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{TITLE}} — Lobpreis</title>
+<meta name="theme-color" content="#b8551f">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<link rel="stylesheet" href="/assets/style.css">
+<script>
+(function(){try{
+  var d=document.documentElement;
+  var t=localStorage.getItem('lobpreis.theme');
+  if(t==='light'||t==='dark')d.setAttribute('data-theme',t);
+  var fs=localStorage.getItem('lobpreis.fontSize');
+  if(fs)d.style.setProperty('--lyrics-size',fs+'rem');
+  if(localStorage.getItem('lobpreis.chords')==='off')d.classList.add('no-chords');
+}catch(e){}})();
+</script>
+</head>
+<body>
+<header class="topbar">
+  <a href="/" class="brand" aria-label="Zurück zur Übersicht">← Lobpreis</a>
+  <div class="controls">
+    <button id="theme-toggle" class="iconbtn" aria-label="Theme wechseln" title="Theme">◐</button>
+    <button id="font-down" class="iconbtn" aria-label="Schrift kleiner" title="Kleiner">A−</button>
+    <button id="font-up" class="iconbtn" aria-label="Schrift grösser" title="Grösser">A+</button>
+    <button id="chord-toggle" class="iconbtn" aria-label="Akkorde anzeigen/verbergen" title="Akkorde">♪</button>
+  </div>
+</header>
+<main class="song-page">
+{{SONGS_HTML}}
+</main>
+<script src="/assets/app.js"></script>
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){});});}</script>
+</body>
+</html>

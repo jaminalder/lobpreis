@@ -310,14 +310,14 @@ def main() -> int:
                 .replace("{{SONGS_HTML}}", body))
         (out_dir / "index.html").write_text(html, encoding="utf-8")
 
-    # 3. Flat list of all songs for index + search index.
+    # 3. Flat list of all songs for index + search index. Each .cho file lists
+    # its primary song first, with translations as secondary entries; those
+    # secondary titles each have their own .cho where they're primary, so
+    # listing only primaries gives every unique title exactly once.
     flat: list[dict] = []
     for page in pages:
-        for i, s in enumerate(page["songs"]):
-            href = f"/song/{page['file_slug']}/"
-            if i > 0:
-                href += f"#{s['anchor']}"
-            flat.append({"title": s["title"], "href": href})
+        s = page["songs"][0]
+        flat.append({"title": s["title"], "href": f"/song/{page['file_slug']}/"})
     flat.sort(key=lambda e: (fold(e["title"]), e["title"]))
 
     # 4. Index page.

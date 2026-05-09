@@ -49,6 +49,27 @@ def fold(s: str) -> str:
 CHORD_RE = re.compile(r"\[([^\]]+)\]")
 TITLE_RE = re.compile(r"^\{title:\s*(.*?)\s*\}\s*$")
 NEWSONG_RE = re.compile(r"^\{new_song\}\s*$")
+INCLUDE_RE = re.compile(r"^\s*#include\s+(\S+)\s*$")
+
+
+def expand_includes(text: str, base_dir: Path, top_level: bool = True) -> str:
+    """Inline `#include other.cho` directives. Each pair of translation files
+    references the other, so we only expand at the top level — nested includes
+    inside an included file are dropped to avoid mutual-recursion loops."""
+    out: list[str] = []
+    for line in text.splitlines():
+        m = INCLUDE_RE.match(line)
+        if not m:
+            out.append(line)
+            continue
+        if not top_level:
+            continue
+        inc_path = base_dir / m.group(1)
+        if not inc_path.is_file():
+            print(f"warn: missing include {m.group(1)}", file=sys.stderr)
+            continue
+        out.append(expand_includes(inc_path.read_text(encoding="utf-8"), base_dir, top_level=False))
+    return "\n".join(out)
 
 
 def parse_cho(text: str) -> list[dict]:
@@ -271,7 +292,7 @@ def main() -> int:
     # 1. Parse all .cho files.
     pages = []
     for path in sorted(SRC.glob("*.cho")):
-        text = path.read_text(encoding="utf-8")
+        text = expand_includes(path.read_text(encoding="utf-8"), SRC)
         songs = parse_cho(text)
         if not songs:
             print(f"warn: no songs in {path.name}", file=sys.stderr)

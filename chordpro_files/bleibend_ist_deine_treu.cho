@@ -30,35 +30,4 @@
 [G7]All meinen Mangel hast du mi[C]r gestillet,[Dm7]
 [F]bleibend ist deine [C]Treu, wo[G] ich[G7] auch[C] geh!
 
-{new_song}
-{title: Tu és fiel, Senhor}
-
-[C]Tu és fiel, Senhor,[G] meu [G7]Pai c[C]eleste:
-[F]Pleno poder aos t[C]eus filh[D/F#]os darás.[G]
-[G7]Nunca mudaste: t[C]u nunca faltaste:[Dm7]
-[F]Tal como eras,[C] tu sempr[G]e se[G7]rás.[C]
-
-[G]Tu és fiel, Senhor![C] Tu és fi[A]el Senhor![Dm]
-[G7]Dia após dia, com bê[C]nçãos sem[D/F#] fim,[G]
-[G7]Tua mercê me sustenta e me g[C]uarda.[Dm7]
-[F]Tu és fiel, Senhor,[C] fiel a [G]mim.[G7][C]
-
-[C]Flores e frutos, mo[G]ntanh[G7]as e [C]mares,
-[F]Sol, Lua, estrela[C]s no céu[D/F#] a brilhar:[G]
-[G7]Tudo criaste na [C]terrra e nos ares.[Dm7]
-[F]Todo o Univers[C]o vem poi[G]s te[G7] louv[C]ar!
-
-[G]Tu és fiel, Senhor![C] Tu és fi[A]el Senhor![Dm]
-[G7]Dia após dia, com bê[C]nçãos sem[D/F#] fim,[G]
-[G7]Tua mercê me sustenta e me g[C]uarda.[Dm7]
-[F]Tu és fiel, Senhor,[C] fiel a [G]mim.[G7][C]
-
-[C]Pleno perdão tu dás[G]: paz[G7], seg[C]urança:
-[F]Cada momento me g[C]uias, Se[D/F#]nhor.[G]
-[G7]E, no porvir, oh[C]! Que doce esperança:[Dm7]
-[F]Desfrutarei do[C] teu rico[G] fav[G7]or![C]
-
-[G]Tu és fiel, Senhor![C] Tu és fi[A]el Senhor![Dm]
-[G7]Dia após dia, com bê[C]nçãos sem[D/F#] fim,[G]
-[G7]Tua mercê me sustenta e me g[C]uarda.[Dm7]
-[F]Tu és fiel, Senhor,[C] fiel a [G]mim.[G7][C]
+#include tu_es_fiel_senhor.cho

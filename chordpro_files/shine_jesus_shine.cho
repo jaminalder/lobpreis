@@ -45,38 +45,4 @@ so our faces display your like[A]ness,[E/A]
 [A]send forth[E/A] your wor[A]d, Lor[D]d
 [A/C#]and le[Bm]t th[E7]ere [A]be light.
 
-{new_song}
-{title: Brilha Jesus}
-
-[A]Vejo a luz do Sen[D/A]hor que bril[A]ha[E/A]
-Bem no meio das trevas bri[A]lha[E/A]
-[D]Jesus Cristo é a l[E/D]uz deste m[C#m]undo[F#m]
-[D]Nos acorda do sono [E/D]profundo[C#m][F#m]
-[G]Brilha e[E]m mim, bri[G]lha em m[E]im[A]
-
-[A]Brilha Jes[E/A]us, mostr[A]a ao m[D]undo a luz de Deus Pai
-[A/C#]Espíri[Bm]to d[Bm/A]e Deus, vem ref[E]ulge em nós
-[A]Faz transb[E/A]ordar sob[A]re os [D]povos Tua Graça e Perdão
-[A/C#]Vem or[Bm]dena[E7]r qu[A]e haja luz oh Senhor
-
-[A]Eis que chego ao [D/A]Teu trono in[A]crível[E/A]
-Mais finito ao intangível[A][E/A]
-[D]No Teu sangue prec[E/D]ioso eu ouso en[C#m]trar[F#m]
-[D]Minhas sombras da[E/D] alma vem dissi[C#m]par[F#m]
-[G]Brilha e[E]m mim, bri[G]lha em m[E]im[A]
-
-[A]Brilha Jes[E/A]us, mostr[A]a ao m[D]undo a luz de Deus Pai
-[A/C#]Espíri[Bm]to d[Bm/A]e Deus, vem ref[E]ulge em nós
-[A]Faz transb[E/A]ordar sob[A]re os [D]povos Tua graça e perdão
-[A/C#]Vem or[Bm]dena[E7]r qu[A]e haja luz oh Senhor
-
-[A]Contemplando Tua ma[D/A]jestade[A][E/A]
-Teu reflexo em nossas faces[A][E/A]
-[D]Cada dia de glória[E/D] em glória[C#m][F#m]
-[D]Mostrem sempre a [E/D]Tua história[C#m][F#m]
-[G]Brilha e[E]m mim, bri[G]lha em m[E]im[A]
-
-[A]Brilha Jes[E/A]us, mostr[A]a ao m[D]undo a luz de Deus Pai
-[A/C#]Espíri[Bm]to d[Bm/A]e Deus, vem ref[E]ulge em nós
-[A]Faz transb[E/A]ordar sob[A]re os [D]povos Tua graça e perdão
-[A/C#]Vem or[Bm]dena[E7]r qu[A]e haja luz oh Senhor
+#include brilha_jesus.cho

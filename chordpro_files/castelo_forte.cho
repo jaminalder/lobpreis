@@ -25,29 +25,4 @@
 [C#m]Embora a v[F#7]ida vá, p[B]or nós Jesus [A]está,[F#m][G#]
 [C#m]E dar-[A]nos-á[F#m] Seu [E]Reino!
 
-{new_song}
-{title: Ein' feste Burg ist unser Gott}
-
-[E]Ein' fe[B]ste [C#m]Burg [B]ist unse[A]r Got[E/G#]t, ein[F#m]' gut[E]e Wehr und Waffen.
-[E]Er hilf[B]t un[C#m]s fre[B]i aus aller[A] Not,[E/G#] die u[F#m]ns je[E]tzt hat betroffen.
-[E]Der [F#7]alte [B]böse Feind,[E] mit Ern[A]st er[C#m] es jetzt meint;
-[C#m]grosse Mac[F#7]ht und[B] List sein' g[A]rausa[F#m]m Rüs[G#]tung ist,
-[C#m]auf Er[A]d ist[F#m] nich[E]t seinsgleichen.
-
-[E]Mit [B]unsr[C#m]er Mac[B]ht ist nich[A]ts ge[E/G#]tan, w[F#m]ir si[E]nd gar bald verloren;
-[E]es s[B]trei[C#m]t für [B]uns der rech[A]te Ma[E/G#]nn, de[F#m]n Got[E]t hat selbst erkoren.
-[E]Frag[F#7]st du,[B] wer der ist[E]? Er heis[A]st Jes[C#m]us Christ,
-[C#m]der Herr Z[F#7]ebaoth, u[B]nd ist kein a[A]ndrer[F#m] Gott;[G#]
-[C#m]das Fe[A]ld mu[F#m]ss er[E] behalten.
-
-[E]Und [B]wenn[C#m] die [B]Welt voll Teu[A]fel w[E/G#]är' un[F#m]d wol[E]lt' uns gar verschlingen,
-[E]so f[B]ürch[C#m]ten wi[B]r uns gar nic[A]ht me[E/G#]hr, es[F#m] soll[E] uns doch gelingen.
-[E]Der [F#7]Fürst [B]dieser Welt,[E] wie [A]sauer[C#m] er sich stellt,
-[C#m]tut er uns[F#7] doch nic[B]hts; das mach[A]t, er[F#m] ist g[G#]ericht:
-[C#m]ein Wö[A]rtlei[F#m]n kan[E]n ihn fällen.
-
-[E]Das [B]Wort[C#m] sie s[B]ollen lasse[A]n sta[E/G#]hn, un[F#m]d kei[E]n' Dank dazu haben;
-[E]er i[B]st b[C#m]ei uns[B] wohl auf d[A]em Pl[E/G#]an mit[F#m] sein[E]em Geist und Gaben.
-[E]Nehm[F#7]en sie[B] den Leib, Gu[E]t, Eh[A]r, Ki[C#m]nd und Weib;
-[C#m]lass fahre[F#7]n dahin, [B]sie haben kei[A]n' Ge[F#m]winn,[G#]
-[C#m]das Re[A]ich m[F#m]uss u[E]ns doch bleiben.
+#include ein_feste_burg.cho

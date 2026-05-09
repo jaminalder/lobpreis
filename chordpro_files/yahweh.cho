@@ -17,21 +17,4 @@ Spread your wings towards the sky
 Like an eagle fly high
 Higher, higher and higher!
 
-{new_song}
-{title: Iavé}
-
-Não ouviste ainda as novas
-de que lavé é Deus eterno
-não ouviste ainda as novas
-Ele criou todos os céus e a terra
-não ouviste ainda as novas
-nosso Deus é forte e poderoso
-não se cansa e insondável é dando sua força ao cansado
-àquele sem vigor força dá
-os que esperam no Senhor se levantam e não caem mais subirão
-como as águias nas alturas voarão
-estes correm e não se cansam
-sem fadiga para sempre andarão
-abre as asas para os céus
-voa como a grande águia
-alto, alto e mais alto, alto, alto e mais alto
+#include iave.cho

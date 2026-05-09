@@ -24,30 +24,4 @@
 [C#m]lass fahre[F#7]n dahin, [B]sie haben kei[A]n' Ge[F#m]winn,[G#]
 [C#m]das Re[A]ich m[F#m]uss u[E]ns doch bleiben.
 
-{new_song}
-{title: Castelo Forte}
-
-[E]Castelo[B] for[C#m]te é [B]nosso Deus, e[A]spada[E/G#] e bom[F#m] escu[E]do.
-[E]Com Seu[B] pod[C#m]er de[B]fende os Seus,
-[A]Em to[E/G#]do tra[F#m]nse a[E]gudo.
-[E]Com [F#7]fúria [B]pertinaz, pe[E]rsegu[A]e sat[C#m]anás.
-[C#m]Com artima[F#7]nhas tais[B], e astúcias [A]tão c[F#m]ruéis,[G#]
-[C#m]Que ig[A]uais [F#m]não h[E]á na terra!
-
-[E]A no[B]ssa [C#m]força [B]nada faz: e[A]stamo[E/G#]s, sim[F#m], per[E]didos.
-[E]Mas [B]noss[C#m]o Deus[B] socorro tr[A]az e [E/G#]somos [F#m]prote[E]gidos.
-[E]Defe[F#7]nde-no[B]s Jesus, o [E]que v[A]enceu[C#m] na cruz,
-[C#m]Senhor dos[F#7] altos cé[B]us. E sendo o[A] próp[F#m]rio De[G#]us,
-[C#m]Triunf[A]a na [F#m]batal[E]ha!
-
-[E]Se n[B]os q[C#m]uisess[B]em devorar,[A] demô[E/G#]nios n[F#m]ão co[E]ntados,
-[E]Não [B]nos [C#m]podiam[B] assustar, [A]nem s[E/G#]omos d[F#m]errot[E]ados.
-[E]O gr[F#7]ande a[B]cusador, do[E]s ser[A]vos d[C#m]o Senhor.
-[C#m]Já condena[F#7]do está, [B]vencido cairá[A];[F#m][G#]
-[C#m]Por um[A]a só [F#m]palav[E]ra!
-
-[E]Sim [B]que [C#m]a pala[B]vra ficará,[A] sabe[E/G#]mos co[F#m]m cer[E]teza.
-[E]E na[B]da n[C#m]os ass[B]ustará, com[A] Cris[E/G#]to por[F#m] defe[E]sa.
-[E]Se t[F#7]emos d[B]e perder, o[E]s fil[A]hos, [C#m]bens, mulher.
-[C#m]Embora a v[F#7]ida vá, p[B]or nós Jesus [A]está,[F#m][G#]
-[C#m]E dar-[A]nos-á[F#m] Seu [E]Reino!
+#include castelo_forte.cho

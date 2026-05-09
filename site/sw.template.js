@@ -21,23 +21,23 @@ self.addEventListener('activate', function (event) {
   );
 });
 
+// Network-first: always try the network so deploys are visible on the next
+// load. The cache is populated as a side effect and used only when offline.
 self.addEventListener('fetch', function (event) {
   if (event.request.method !== 'GET') return;
   var url = new URL(event.request.url);
   if (url.origin !== location.origin) return;
 
   event.respondWith(
-    caches.match(event.request).then(function (hit) {
-      if (hit) return hit;
-      return fetch(event.request).then(function (resp) {
-        // Opportunistically cache same-origin successful GETs.
-        if (resp && resp.ok && resp.type === 'basic') {
-          var copy = resp.clone();
-          caches.open(CACHE).then(function (c) { c.put(event.request, copy); });
-        }
-        return resp;
-      }).catch(function () {
-        // Offline fallback: serve index for navigation requests.
+    fetch(event.request).then(function (resp) {
+      if (resp && resp.ok && resp.type === 'basic') {
+        var copy = resp.clone();
+        caches.open(CACHE).then(function (c) { c.put(event.request, copy); });
+      }
+      return resp;
+    }).catch(function () {
+      return caches.match(event.request).then(function (hit) {
+        if (hit) return hit;
         if (event.request.mode === 'navigate') return caches.match('/');
       });
     })

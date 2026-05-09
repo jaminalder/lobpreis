@@ -96,6 +96,15 @@ a:hover, a:focus-visible { text-decoration: underline; }
 .iconbtn:hover, .iconbtn:focus-visible { background: var(--btn-bg-hover); }
 .iconbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .iconbtn:active { transform: translateY(1px); }
+.iconbtn[aria-pressed="true"] {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.iconbtn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.iconbtn:disabled:hover { background: var(--btn-bg); }
 
 /* ---------- main wrappers ---------- */
 

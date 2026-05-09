@@ -50,12 +50,21 @@
 
   // ---- chord visibility
   var chordBtn = document.getElementById('chord-toggle');
+  var hasChords = !!document.querySelector('.chord');
   function chordsOn() { return LS.get('chords') !== 'off'; }
   function applyChords(on) {
     if (on) { d.classList.remove('no-chords'); LS.set('chords', 'on'); }
     else    { d.classList.add('no-chords');    LS.set('chords', 'off'); }
-    if (chordBtn) chordBtn.setAttribute('aria-pressed', on ? 'false' : 'true');
+    if (chordBtn) chordBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
   }
   applyChords(chordsOn());
-  if (chordBtn) chordBtn.addEventListener('click', function () { applyChords(!chordsOn()); });
+  if (chordBtn) {
+    if (!hasChords) {
+      chordBtn.disabled = true;
+      chordBtn.setAttribute('aria-pressed', 'false');
+      chordBtn.title = 'Keine Akkorde in diesem Lied';
+    } else {
+      chordBtn.addEventListener('click', function () { applyChords(!chordsOn()); });
+    }
+  }
 })();

@@ -91,6 +91,7 @@ a:hover, a:focus-visible { text-decoration: underline; }
   color: var(--fg);
   cursor: pointer;
   line-height: 1;
+  touch-action: manipulation;
 }
 .iconbtn:hover, .iconbtn:focus-visible { background: var(--btn-bg-hover); }
 .iconbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }

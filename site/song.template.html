@@ -16,7 +16,7 @@
   if(t==='light'||t==='dark')d.setAttribute('data-theme',t);
   var fs=localStorage.getItem('lobpreis.fontSize');
   if(fs)d.style.setProperty('--lyrics-size',fs+'rem');
-  if(localStorage.getItem('lobpreis.chords')==='off')d.classList.add('no-chords');
+  d.classList.add('no-chords');
 }catch(e){}})();
 </script>
 </head>
